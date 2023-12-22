@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con Sonido</title>
+  <link rel="stylesheet" href="estilos.css">
+  <a href="index.html">PAGINA PRINCIPAL</a>
+</head>
+
+<img src="img/IMG_7309-removebg.png" alt="niño" class="niño-1">
+<div class="caja">
+    <img src="https://img.freepik.com/vector-premium/caja-carton-signo-interrogacion-rojo-desempaqueta-paquete-desconocido_124715-2082.jpg?w=2000" alt="Imagen" height="300px" id="miImagen" style="cursor: pointer;">
+</div>
+
+<div id="resp" >
+    <h1>
+        AYUDA A JORGE!! <hr> ¿QUE ANIMAL ESCUCHAS DENTRO DE LA CAJA?
+    </h1>
+</div>
+<br><br>
+
+<div class="opcs1">
+    <img src="img/11189732_2297.jpg" alt="perro" height="275px" id="Perro" onclick="verificarRespuesta(`perro`)" style="cursor: pointer;">
+    <img src="img/IMG_7295.JPG" alt="loro" height="275px" id="Loro" onclick="verificarRespuesta(`loro`)" style="cursor: pointer;">
+    <img src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-sentado-naturaleza-animal-icono-concepto-aislado-premium-plano_138676-6708.jpg?w=740&t=st=1702335056~exp=1702335656~hmac=1a96b558117b29a90672833cba17486b6ec364b87e2c7c4562ddfbf97bfc94dd" alt="gato" height="275px" id="Gato" onclick="verificarRespuesta(`gato`)"style="cursor: pointer;">
+  </div>
+
+
+
+
+/// El archivo de audio 
+<audio    id="miSonido">
+  <source src="audios/mixkit-medium-size-angry-dog-bark-54.wav" type="audio/mp3">
+</audio>
+
+</body>
+</html>
+<script src="main.js"></script>
